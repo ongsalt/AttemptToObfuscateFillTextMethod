@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+    <h1>
+        Canvas test
+    </h1>
+    <div>
+        <code>
+            CanvasRenderingContext2D.prototype.fillText = (t, x, y, m) => {console.log(t)}
+        </code>
+        <p>
+            ตอนแรกจะหาวิธีกัน over  write fillText เป็น console.log <br>
+            Fuck it, these thing below work. แล้วกุจะนั่งหาวิธี render ไปทำมายยยยย
+        </p>
+        <code>
+            Object.freeze(CanvasRenderingContext2D.prototype) <br>
+            Object.freeze(Array.prototype) <br>
+            Object.freeze(String.prototype) <br>
+        </code>
+        <div>
+        </div>
+        <button onclick="render(text, prefs)">
+            Rerender
+        </button>
+    </div>
+    
+    <canvas id="c" width="400" height="400">
+
+    </canvas>
+
+    <script src="main.js"></script>
+    <script src="bruh.js"></script>
+</body>
+</html>
