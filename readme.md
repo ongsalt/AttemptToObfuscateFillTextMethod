@@ -7,7 +7,7 @@ If you want to start simple word splitting api then run `npm install` and then `
 If not just go into client folder and rewrite wordcut function to return some string then just open the index.html file in your browser.
 
 # Why this thing is trash
-cuz I've just realized that there is `Object.freeze` method
+cuz I've just realized that `Object.freeze` exist.
 
 
 
